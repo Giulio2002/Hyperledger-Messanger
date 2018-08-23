@@ -1,0 +1,3 @@
+docker exec cli0.Org1 bash -c "peer chaincode invoke -C org1 -n Messanger -c '{\"Args\":[\"sendMessage\", \"FunnyGiulio\",\"Password\",\"FunnyLuigi\",\"HyperLedger is awesome\"]}' --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/messanger.com/orderers/orderer.messanger.com/msp/tlscacerts/tlsca.messanger.com-cert.pem"
+sleep 1
+docker exec cli0.Org1 bash -c "peer chaincode invoke -C org1 -n Messanger -c '{\"Args\":[\"query\", \"FunnyLuigi\",\"Password\"]}' --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/messanger.com/orderers/orderer.messanger.com/msp/tlscacerts/tlsca.messanger.com-cert.pem"
