@@ -1,4 +1,4 @@
-# Hyperledger-Authenticator
+# Hyperledger-Messanger
 
 ## What
   * this is a simple blockchain made with hyperledger fabric that can provide a simple messanger system(username and password).
@@ -20,7 +20,7 @@
   ```
   ## After you bootstrap.sh
   sh register.sh # add 2 new users to the network
-  sh sendMsgAndQuery.sh # FunnyGiulio send a message to FunnyLuigi and the FunnyLuigi query FunnyGiulio's messages
+  sh sendMsgAndQuery.sh # FunnyGiulio send a message to FunnyLuigi and then FunnyLuigi query FunnyGiulio's messages
   ```
 ## License
 
