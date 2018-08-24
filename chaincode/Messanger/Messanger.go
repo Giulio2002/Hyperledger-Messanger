@@ -56,6 +56,9 @@ func (c *Messanger) Invoke(stub shim.ChaincodeStubInterface) pb.Response {
         // send message
         var user User;
         json.Unmarshal(v, &user)
+        if len(user.Msgs) == 0 {
+            user.Msgs = make([]string, 0)
+        }
         user.Msgs = append(user.Msgs, args[0] + ": " + args[3])
         userAsBytes, err := json.Marshal(user)
         if err != nil {
