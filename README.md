@@ -1,8 +1,7 @@
 # Hyperledger-Messanger
 
 ## What
-  * this is a simple blockchain made with hyperledger fabric that can provide a simple messanger system(username and password).
-  * everyone can use this blockchain to deploy their own messanger system in the network.
+  * this is a simple blockchain made with hyperledger fabric that can provide a simple messanger system.
   * a peer(called from more users) call the register function to register a new user to the network(using the authenticator chaincode)
     and then the user can start using the "Messanger" chaincode to send private messages to other users.
 
